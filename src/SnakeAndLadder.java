@@ -18,7 +18,7 @@ public class SnakeAndLadder {
 	   }
 	   
 	   if(pos1==100)
-	   System.out.println("Player1 wins");
+	   System.out.println("Player1 wins and number of moves is" + count1);
 	
      }	
  
