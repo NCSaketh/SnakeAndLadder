@@ -15,11 +15,18 @@ public class SnakeAndLadder {
 		   int type = (int)Math.ceil(Math.random()*3);
 		   if(a%2==0)
 			   player1(x,type);
+		   else 
+			   player2(x,type);
+		   if(type!=2)
+			   a++;
+		  
 	   }
 	   
 	   if(pos1==100)
 	   System.out.println("Player1 wins and number of moves is" + count1);
-	
+	   else
+	   System.out.println("Player2 wins and number of moves is" + count2);
+	   
      }	
  
     public static int player1(int x, int type)  
@@ -41,4 +48,22 @@ public class SnakeAndLadder {
     	return pos1;
     }
    
+    public static int player2(int x,int type)
+    {
+    	count2++;
+    	
+    	System.out.println(p2+ ":position is" + pos2);
+    	switch(type)
+    	 {
+    	case 1:
+    		if(pos2 +x <=100)
+    			pos2+=x;
+    		break;
+    	case 2: pos2-=x;
+    	if(pos2<0)
+    		pos2=0;
+    	break; 		
+     	 }
+    	return pos2;
+    }
 }
