@@ -29,13 +29,16 @@ public class SnakeAndLadder {
     	switch(type)
     	{
     	case 1 : 
+    		if(pos1 +x <= 100)
     		pos1+=x;
     		break;
-    	case 2:
-    		pos1-=x;
+    	case 2:	pos1-=x;
+    	 if(pos1<0)	
+    		 pos1 = 0;
     		break;
     		
     	}
+    	return pos1;
     }
    
 }
