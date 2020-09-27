@@ -8,6 +8,14 @@ public class SnakeAndLadder {
 	static String p2 = "Player2";
 	
    public static void main(String[] args) {
+	   int a = 0;
+	   while (pos1 != 100 && pos2 !=  100)
+	   {
+		   int x = (int)Math.ceil(Math.random()*6);
+		   int type = (int)Math.ceil(Math.random()*3);
+		   
+	   }
+	   
 	
      }	
 
