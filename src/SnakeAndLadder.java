@@ -17,8 +17,25 @@ public class SnakeAndLadder {
 			   player1(x,type);
 	   }
 	   
+	   if(pos1==100)
 	   System.out.println("Player1 wins");
 	
      }	
-
+ 
+    public static int player1(int x, int type)  
+    {
+    	count1++;
+    	System.out.println(p1+ ":position is" + pos1);
+    	switch(type)
+    	{
+    	case 1 : 
+    		pos1+=x;
+    		break;
+    	case 2:
+    		pos1-=x;
+    		break;
+    		
+    	}
+    }
+   
 }
