@@ -13,9 +13,11 @@ public class SnakeAndLadder {
 	   {
 		   int x = (int)Math.ceil(Math.random()*6);
 		   int type = (int)Math.ceil(Math.random()*3);
-		   
+		   if(a%2==0)
+			   player1(x,type);
 	   }
 	   
+	   System.out.println("Player1 wins");
 	
      }	
 
